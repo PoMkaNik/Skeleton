@@ -1,3 +1,81 @@
-.big {
-  background: red;
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+.showcase__img {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -22rem;
+}
+
+.icons {
+  background-image: url('../img/showcase-bg.jpg');
+  background-position: 50%;
+  background-size: cover;
+  color: #fff;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+}
+
+.icons .card {
+  border-radius: 10px;
+  background: #000;
+  opacity: 0.6;
+  padding: 2.5rem 1rem 0;
+}
+
+.icons .card__icon {
+  font-size: 40px;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.icons .card__body {
+  color: #fff;
+}
+
+.icons .card__body h5 {
+  margin-bottom: 1rem;
+}
+
+.banner {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url('../img/section-bg.jpg');
+  background-position: 50%;
+  background-size: cover;
+  color: #fff;
+}
+
+@media (max-width: 749px) {
+  .icons .card__icon {
+    font-size: 30px;
+  }
+
+  .icons .card__body h5 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 549px) {
+  .icons {
+    margin-top: 10rem;
+  }
+
+  .icons .card:not(:first-of-type) {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .showcase__heading {
+    font-size: 4rem;
+    padding-top: 11rem;
+  }
 }
